@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+
+window.onload = function(){
+	let botaoIgual = document.getElementById("igual");
+	botaoIgual.onclick = function(){
+		let campoA = document.getElementById("a");
+                let campoB = document.getElementById("b");
+                let campoC = document.getElementById("c");
+
+		campoC.value = window.parseInt(campoA.value) + window.parseInt(campoB.value);
+	};
+};
+</script>
+</head>
+<body>
+<input id="a" type="text"> + <input id="b" type="text"> <input id="igual" type="button" value="="> <input id="c" type="text" value="" disabled>
+</body>
+</html>
